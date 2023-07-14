@@ -1,50 +1,73 @@
 *{
     padding:0;
     margin:0;
-    vertical-align:baseline;
+    box-sizing: border-box;
     list-style:none;
     border:0;
     
 }body{
-  background-color: rgb(236, 234, 234);
+  background: linear-gradient(to right,#a900f7, #4900ff, #0175a3); 
+  height: 100%;
 }
-#apr{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-    color: rgb(29, 27, 16);
-    margin-top: 150px;
-    margin-left: 150px;
-    animation-duration: 1.5s;
-    animation-name: slidein1;
-    
-}@keyframes slidein1 {
+#fundo-gif {
+  width: 100%;
+  height: 500px;
+  border-style: solid;
+  background: linear-gradient(#4900ff, #4900ff) padding-box, 
+    linear-gradient(to right, #f70073, #4900ff, #00fff9) border-box;
+	border-radius: 1em;
+	border: 2px solid transparent;
+  
+}
+@keyframes slidein1 {
   from {
     margin-left: 100%;
     width: 300%
   }to {
     margin-left: 150px;
     width: 100%;
-  }
+  }}
+#apr{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    color: #00b8ff;
+    text-shadow: -1px 1px 6px  #4900ff;
+    margin-top: 113px;
+    margin-left: 150px;
+    animation-duration: 1.5s;
+    animation-name: slidein1;
 }
 span{
     font-family: 'Roboto', sans-serif;
     font-size: 45px;
     font-weight: 400;
-    color: rgb(104, 103, 103);
-}#logos{
+    color: rgb(161, 158, 158);
+    
+}
+#img-rosto{
+  margin-top: -350px;
+  margin-left: 650px;
+  width: 300px;
+}
+#logos{
     margin-top: 20px;
     padding: -60px;
     width: 95px;
     height: 55px;
     border-radius: 50px 50px ;
-    box-shadow: -1px 1px 6px;
+    box-shadow: -1px 1px 6px  #5020ff;
+    
+    background-color: #4900ff;
 
     animation-duration: 1.7s;
     animation-name: slidein2;
     animation: infinite;
+    animation: bordaAnima 20s linear infinite;
 
-}@keyframes slidein2 {
+}
+@keyframes slidein2 {
         from {
           margin-left: 5%;
           width: 95px;
@@ -53,8 +76,7 @@ span{
           margin-left: 0px;
           width: 95px;
           height: 55px;
-        }
-}
+        }}
 [data-anime]{
   opacity: 0;
   transition: 1s;
@@ -69,29 +91,32 @@ span{
 }[data-anime].animate{
   opacity: 1;
   transform: translate3d(0, 0, 0);
-}.sobre a1{
+}a1{
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   text-align: left;
-  border-radius: 0px 70px 70px;
+  border-radius: 70px 70px 70px;
+  
   padding: 50px 100px 70px 25px;
   position: absolute;
   margin-top: 50px;
   margin-left:150px ;
   color: rgb(236, 234, 234);
+
   background: black;
-}.sobre a2{
+  box-shadow: 0px 0px 6px 0px #00ffff;
+}a2{
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   text-align: left;
-  border-radius: 70px 0px 70px 70px;
+  border-radius: 70px 70px 70px ;
   padding: 50px 100px 70px 25px;
   position: absolute;
   margin-top: 350px;
   margin-left:150px ;
   color: rgb(236, 234, 234);
   background: black;
-  box-shadow: -1px 1px 6px;
+  box-shadow: 0px 0px 6px 0px #00ffff;
 }footer{
   margin-top:1000px ;
 }
